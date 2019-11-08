@@ -56,6 +56,17 @@ Don't be afraid to experiment with these. Then save the file and test your chang
 1. Delete all files from Diablo 2 folder except MPQs.
 2. Download 1.14d patch ZIP from PlugY website (very bottom of the page) and extract it into Diablo 2 folder.
 
+### Known issues
+
+When working with POD loot filter, PlugY option to relocate save files doesn't work and  causes an error:
+BYTE 56 wanted but E8 found to change memory at 6FF6E16A.
+Make sure to deactivate it:
+```[SAVEPATH]
+ActiveSavePathChange=0```
+If you want to change save path, do it through Mod PlugY\config\config.cfg file. Note that you have to type double backslashes in the path there like so:
+\Save Path\="C:\\Users\\ubeogesh\\OneDrive\\Games\\D2Saves"
+
+
 ## Credits
 
 - Inspired by whipowill's mod compilation: https://github.com/whipowill/d2-plugy-qol, but I didn't like that it's "all or nothing" and the instructions

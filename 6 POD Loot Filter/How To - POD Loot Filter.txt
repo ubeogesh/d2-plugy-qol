@@ -9,4 +9,9 @@ Following files go in the root Diablo 2 folder (Where Game.exe and D2Data.mpq fi
 Folder "Mod PlugY" should be merged with your existing folder
 
 NOTE: If you have manually changed character (save) file location via registry edit, this will discard those changes.
-Instead, change save file location via PlugY.ini file
+If you change save file location via PlugY (via ActiveSaveFileChange setting), the game will not start.
+
+Instead, use Mod PlugY\config\config.cfg text file to change save file location, like this:
+\Save Path\="C:\\Users\\ubeogesh\\OneDrive\\Games\\D2Saves"
+
+Note the double slashes, they are needed to work.
