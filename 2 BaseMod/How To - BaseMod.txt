@@ -1,0 +1,15 @@
+PlugY must be installed first (make sure to use Installer version of PlugY, not ZIP archive)
+
+1. Put this into your diablo 2 folder
+BaseMod.dll must be in the same folder as files such Game.exe and D2Data.MPQ
+Mod PlugY folder should be merged with your existing Mod PlugY folder
+2. Go to mod PlugY folder, and edit the PlugY.ini file
+Near the start of the file where it says "DllToLoad=", write "BaseMod.dll"; i.e. like this:
+
+DllToLoad=BaseMod.dll
+
+Note: if you have already used DllToLoad for Widescreen support (D2HD.dll), instead use DllToLoad2, like this:
+
+DllToLoad2=BaseMod.dll
+
+Then save the file.

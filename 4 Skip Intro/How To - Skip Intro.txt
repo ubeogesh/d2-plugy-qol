@@ -1,0 +1,16 @@
+1. Copy to your Diablo 2 folder. Merge the Mod PlugY folder with your existing folder.
+2. Go to Mod PlugY and edit the PlugY.ini file
+Right at the start of the file under [LAUNCHING], where it says "Param=", append to the end "-direct -txt", like this:
+
+Param= -direct -txt
+
+NOTE: If you already have -direct -txt here, no need to make changes.
+NOTE: You may have other settings here, like -3dfx, -sndbkg, -w and so on.
+Just concatenate all this together, but make sure there is space before each dash. Order doesn't matter
+Examples:
+
+Param= -w -direct -txt
+
+Param= -direct -txt -sndbkg
+
+Param= -3dfx -direct -txt -sndbkg

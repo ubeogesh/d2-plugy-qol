@@ -1,0 +1,22 @@
+PlugY must be installed first (make sure to use Installer version of PlugY, not ZIP archive)
+Glide Wrapper is also required (but you can still run in DirectDraw mode when windowed)
+
+1. Put this into your diablo 2 folder
+D2HD.dll must be in the same folder as files such Game.exe and D2Data.MPQ
+Mod PlugY folder should be merged with your existing Mod PlugY folder
+2. Go to mod PlugY folder, and edit the PlugY.ini file
+Near the start of the file where it says "DllToLoad=", write "D2HD.dll"; i.e. like this:
+
+DllToLoad=D2HD.dll
+
+IMPORTANT: if you have already put BaseMod.dll in thise line, use next property instead: DllToLoad2; like this:
+
+DllToLoad2=D2HD.dll
+
+Then save the file.
+
+3. After launching Diablo 2 and entering the game, go to video settings and change the resolution
+
+Notes:
+1) Game may crash when changing resolution. This is only when you change resolution, so just restart it once.
+2) When using this mod without PoD loot filter, 2 consecutive errors appear when closing the game. As far as I know they can be safely ignored.

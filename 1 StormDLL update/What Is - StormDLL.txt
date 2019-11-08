@@ -1,0 +1,3 @@
+This change allows downgraded (from 1.14 battle.net installer) diablo 2 versions to work
+
+Storm.DLL file is responsible for reading data archives, and their format was changed in 1.14. The fix allows Storm.dll to read new format.

@@ -1,0 +1,1 @@
+Adds widescreen aspect ratio display modes to the game: 1344x700 and 1068x600.

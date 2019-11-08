@@ -1,89 +1,55 @@
-# Diablo II QOL Mod Pack
-
-This is a mod pack for Diablo II v1.13d that brings together the best quality-of-life features I have found to maximize the singleplayer experience, with the goal of enhancing the game in a limited and tasteful way.
-
-![D2LOD PlugY QOL Mod Pack](https://i.imgur.com/F2wfSek.jpg)
-
 ## What's Included
 
-- [PlugY](http://plugy.free.fr/en/index.html) - adds unlimited stash, shared stash, infinite respec, all runewords.
-- [BaseMod](https://d2mods.info/forum/viewtopic.php?t=65492) - removes singleplayer FPS cap, adds auto gold pickup.
-- [FontFix](https://www.snakebytestudios.com/projects/mods/diablo-2-mods/#fixedfont) - makes 5s look like 5s instead of 6s.
-- [NoIntro](https://www.snakebytestudios.com/projects/mods/diablo-2-mods/#nointro) - skip the intro videos when you boot the game.
-- [DropMod](https://www.snakebytestudios.com/projects/mods/diablo-2-mods/#betterdrops) - 2X as likely to find uniques, 1.5X to find sets, no change to runes.
-- [KeepEquip](https://www.snakebytestudios.com/projects/mods/diablo-2-mods/#equipmentdeath) - keep your equipment when you die (I play HC so I don't care about this).
+- Storm.DLL fix. Allows you to downgrade your official 1.14 battle.net install.
+- [PlugY](http://plugy.free.fr/en/index.html) - adds unlimited stash, shared stash, Diablo Clone, Ubers, Ladder-only runewords, etc.
+- [BaseMod](https://d2mods.info/forum/viewtopic.php?t=65492) - auto gold pickup, extra actions with shift-clic
+- [5 is not 6](https://www.snakebytestudios.com/projects/mods/diablo-2-mods/#fixedfont) - makes 5s look like 5s instead of 6s.
+- [No Intro](https://www.snakebytestudios.com/projects/mods/diablo-2-mods/#nointro) - skip the Blizzard intro videos when you start the game in full screen
 - [LootFilter](https://github.com/Synial/SynFilter/tree/cd4ab9d8b51320973c7b3df9c90b74b3d1ea8f91/xfiles) - adds the loot filter from [Path of Diablo](https://pathofdiablo.com/).
 - [MultiRes](https://drive.google.com/drive/folders/1hLbrYs_U7eVcK-bWOom_Lr2_Y839AVba) - adds widescreen resolutions to the game.
 
-### Additional Changes
-
-- Druid
-    - Shapeshifting duration increased 50%.
-    - Can summon all beasts at same time.
-
 ## How To Install
 
-- Purchase [registration keys](https://us.shop.battle.net/en-us/family/diablo-ii) from Blizzard.
-- Install [Diablo II LOD](https://mega.nz/#!e9thyD6A!ExGJuZUtvRJ2c8DrxSL0ihCouh-ARbdVxODXIqVt3dc) v1.12 (use this installer, don't downgrade v1.14).
-- Install [Patch](http://ftp.blizzard.com/pub/diablo2exp/patches/PC/LODPatch_113d.exe) v1.13d.
-- Install [Glide](http://www.svenswrapper.de/english/files.html) v1.4e.
-- Install [PlugY](http://plugy.free.fr/en/index.html) v11.02.
-- Modify the properties of ``C:/Games/Diablo II/Mod PlugY/PlugY.exe`` to run as administrator and as Windows XP SP3.
-- Modify the PlugY shortcut to have ``"C:/Games/Diablo II/Mod PlugY/PlugY.exe" -3dfx -direct -txt`` as the target.
-- Download this [zipfile](https://github.com/whipowill/d2-plugy-qol/archive/master.zip) and paste the files (one at a time, don't mass merge) into your D2 folder.
-- Play the game.
-
-If you're having errors and the install process didn't work for you, it's probably:
-
-- You aren't using v1.13d.
-- You tried to downgrade from v1.14, which you can't do.
-- You didn't merge the files properly.
-
-### How To Limited Install
-
-If you want to install these mods but you don't want any changes to the actual gameplay (no changes to drops or skills), then delete the ``C:/Games/Diablo II/Mod PlugY/Data/Global/`` folder.
+1. If you don't already have latest Diablo 2 version, purchase and install Diablo 2 and Diablo 2 LoD from [Battle.net shop](https://us.shop.battle.net/en-us/family/diablo-ii)
+2. Open your Diablo 2 installation folder, and delete all the files that don't end with .mpq.
+If you don't see file extensions (endings), enable their display under "View" menu in the file explorer.
+The only remaining files should be:
+- d2video.mpq
+- d2char.mpq
+- d2data.mpq
+- d2exp.mpq
+- Patch_D2.mpq (this one can be deleted too)
+- d2xvideo.mpq
+- d2xtalk.mpq
+- d2music.mpq
+- d2xmusic.mpq
+- d2speech.mpq
+- d2sfx.mpq
+3. Download [1.13d patch archive](http://plugy.free.fr/Patch/LODPatch_113d.zip)
+4. Unpack this archive to your Diablo 2 folder.
+5. Apply Storm.DLL fix: copy the Storm.DLL file into your Diablo 2 folder, and overwrite (detailed instructions inside 1 StormDLL)
+6. Download [Glide Wrapper](http://www.svenswrapper.de/gl32ogl14e.zip) and unpack it into your Diablo 2 folder.
+After unpacking, run the glide-init program, go to settings and check "desktopresolution" box. 
+This installation is needed for proper Full Screen gaming, as well as for the Widescreen Resolution.
+7. Install [PlugY](http://plugy.free.fr/PlugY_The_Survival_Kit_v11.02.exe). This link is to Installer verison. ZIP file version won't do.
+8a. (OPTIONAL) Install any desired addons: BaseMod, Widescreen, Skip Intro, 5 Not 6, POD Loot filter. See detailed instructions inside each folder.
+8b. Alternatively, Install "Full pack" that installs all the things at once without need to edit text files manually.
+9. If you want to play in windowed mode, edit the PlugY.ini file.
+Make sure that it doesn't have "-3dfx" in the Params= line. 
+Scroll a bit down to [WINDOWED], and activate it (0 means inactive, 1 - active). 
+ActiveWindowed makes game windowed
+RemoveBorder removes window border (frame)
+You can configure window position offset by X and Y (from top left corner), and also Width and Height (these values are in pixels).
+Don't be afraid to experiment with them. Then save the file and test your changes.
 
 ### How To Uninstall
 
-Delete all the files you merged through this install process and copy the files from ``_backups`` and into your ``C:/Games/Diablo II/`` folder.
-
-## Mac OSX
-
-You can successfully install the game on Mac but you will have to use Wine in order to do it.  It's more advanced and requires the use of Terminal.  The best tutorial for doing this can be found [here](https://gist.github.com/whipowill/8f9a117895f2927cd6b52ccc611c8266).
-
-## Keyboard Macros
-
-This game is very clicky and you can quickly develop carpal tunnel syndrome by playing it.  To avoid this, I wrote a keyboard macro that lets you hold down the spacebar to move and attack.
-
-- On PC using [AutoHotKey](https://autohotkey.com/), run this [script](https://raw.githubusercontent.com/whipowill/d2-plugy-qol/master/_macros/AutoAttack.ahk).
-- On Mac using [Keyboard Maestro](https://www.keyboardmaestro.com/main/), run this [script](https://raw.githubusercontent.com/whipowill/d2-plugy-qol/master/_macros/AutoAttack.kmmacros).
-
-After importing the macros on Mac, you'll need to specify that the macro is only for use in Wine.  Also note that you won't be able to type spaces while these scripts are running, but typing ``/players8`` still works w/ no space.
-
-This makes melee characters a lot easier to play.
-
-## Advanced Notes
-
-- Make sure you don't have the [CPU fix](http://europebattle.net/d2/tools) installed, as BaseMod already has it.
-- When you first select a widescreen resolution the game will crash, but only the first time.
-- When you first boot the game you will have to click settings to activate the custom loot filter.
-- The loot filter sometimes throws "invalid stat" errors in chat, but I don't think it breaks anything.
-- There is a [StashMod](https://www.moddb.com/games/diablo-2-lod/addons/10x10-stash-mod-lod-113d-compatible) which increases inventory size, but I didn't include it in this pack.
-- I wish I could shift-click between inventory and stash.
-
-## Helpful Links
-
-- [The Arreat Summit](http://classic.battle.net/diablo2exp/) - Official guide to playing the game.
-- [Holy Grail Tracker](https://d2-holy-grail.herokuapp.com/) - Keep track of your items as you find them.
-- [Tankazon's Rune Wizard](https://fabd.github.io/diablo2/runewizard/index.html) - See what runewords you can make.
-- [Tomb of Knowledge](http://www.d2tomb.com/curses.shtml) - A fan website w/ helpful information about the game.
-- [Reddit Community](https://www.reddit.com/r/diablo2/) - A Reddit forum for the fans of D2.
-- [Bugs List](https://us.battle.net/forums/en/d3/topic/6037267083) - A list of all the bugs in the game.
-
-Be sure to also checkout my advice on how to properly [organize](https://github.com/whipowill/d2-plugy-qol/blob/master/STASH.md) your PlugY stash.
+1. Delete all files from Diablo 2 folder except MPQs.
+2. Download 1.14d patch ZIP from PlugY website and extract it into Diablo 2 folder.
 
 ## Credits
 
+- Inspired by whipowill's mod compilation: https://github.com/whipowill/d2-plugy-qol, but I didn't like that it's "all or nothing" and the instructions
 - [PlugY](http://plugy.free.fr/en/index.html) provided by [Yohann Nicolas](http://plugy.free.fr/en/index.html) (v11.02).
 - [BaseMod](https://www.dropbox.com/s/fj3f5smvxdld3kx/BaseMod106.zip) provided by [devurandom](https://d2mods.info/forum/viewtopic.php?t=65492) (v1.06).
 - [FontFix](https://www.snakebytestudios.com/projects/mods/diablo-2-mods/#fixedfont) provided by [SnakeByteStudios](https://www.snakebytestudios.com/projects/mods/diablo-2-mods/).

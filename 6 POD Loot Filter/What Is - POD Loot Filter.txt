@@ -1,0 +1,1 @@
+Loot filter taken from Path Of Diablo mod. Changes item names, colors and removes some items.

@@ -1,0 +1,4 @@
+1. Make the game use less CPU
+2. Auto pick up gold
+3. Move items between inventory\stash\cube or drop them by holding CTRL and left clicking
+4. Put potions and scrolls in your belt from horradric cube and stash, same way as from inventory (SHIFT and left click)

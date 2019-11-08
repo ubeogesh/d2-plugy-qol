@@ -1,0 +1,12 @@
+1. Make a backup of the Fog.dll file in case you need to uninstall this.
+2. Copy to your Diablo 2 folder. 
+Following files go in the root Diablo 2 folder (Where Game.exe and D2Data.mpq files are):
+- D2PodClient.dll
+- Fog.dll
+- pod.dll
+- pod.cfg
+- UI.ini
+Folder "Mod PlugY" should be merged with your existing folder
+
+NOTE: If you have manually changed character (save) file location via registry edit, this will discard those changes.
+Instead, change save file location via PlugY.ini file

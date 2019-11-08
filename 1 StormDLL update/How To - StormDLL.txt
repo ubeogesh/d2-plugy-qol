@@ -1,0 +1,10 @@
+You can either patch your own file, or download this one.
+
+If you choose to download, put it it in your Diablo 2 root folder (same folder where files like Game.exe and d2data.mpq are) - replacing your file.
+
+If you choose to patch your file, here are the instructions:
+
+1. Open Storm.dll file in any hex editor (there are plenty that work through your browser)
+2. Look for sequence: C0751A8B8D (there is only 1 occurrence and it is at offset 2D591)
+3. Change the "75" to "EB"
+4. Save the file
