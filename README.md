@@ -10,6 +10,7 @@
 
 ## How To Install
 
+### Preparation:
 1. If you don't already have latest Diablo 2 version, purchase and install Diablo 2 and Diablo 2 LoD from [Battle.net shop](https://us.shop.battle.net/en-us/family/diablo-ii)
 2. Open your Diablo 2 installation folder, and delete all the files that don't end with .mpq.
 If you don't see file extensions (endings), enable their display under "View" menu in the file explorer.
@@ -25,27 +26,35 @@ The only remaining files should be:
 - d2xmusic.mpq
 - d2speech.mpq
 - d2sfx.mpq
-3. Download [1.13d patch archive](http://plugy.free.fr/Patch/LODPatch_113d.zip)
-4. Unpack this archive to your Diablo 2 folder.
-5. Apply Storm.DLL fix: copy the Storm.DLL file into your Diablo 2 folder, and overwrite (detailed instructions inside 1 StormDLL)
-6. Download [Glide Wrapper](http://www.svenswrapper.de/gl32ogl14e.zip) and unpack it into your Diablo 2 folder.
+3. Download [1.13d patch archive](http://plugy.free.fr/Patch/LODPatch_113d.zip) and unpack it to your Diablo 2 folder
+4. Install [PlugY](http://plugy.free.fr/PlugY_The_Survival_Kit_v11.02.exe). This link is to Installer verison. ZIP file version won't do.
+5. Download [Glide Wrapper](http://www.svenswrapper.de/gl32ogl14e.zip) and unpack it into your Diablo 2 folder.5
 After unpacking, run the glide-init program, go to settings and check "desktopresolution" box. 
 This installation is needed for proper Full Screen gaming, as well as for the Widescreen Resolution.
-7. Install [PlugY](http://plugy.free.fr/PlugY_The_Survival_Kit_v11.02.exe). This link is to Installer verison. ZIP file version won't do.
-8a. (OPTIONAL) Install any desired addons: BaseMod, Widescreen, Skip Intro, 5 Not 6, POD Loot filter. See detailed instructions inside each folder.
-8b. Alternatively, Install "Full pack" that installs all the things at once without need to edit text files manually.
-9. If you want to play in windowed mode, edit the PlugY.ini file.
+
+### Full Install
+Install full pack from here: https://github.com/ubeogesh/diablo2-addons/releases/download/1.0-Full-Pack/Full.Pack.zip. Just unpack to Diablo 2 folder and it's done.
+
+### Modular install
+1. Download the modular release: https://github.com/ubeogesh/diablo2-addons/releases/download/1.0/Modular.zip
+2. Apply Storm.DLL fix: copy the Storm.DLL file into your Diablo 2 folder, and overwrite (detailed instructions inside 1 StormDLL)
+3. Install any desired addons: BaseMod, Widescreen, Skip Intro, 5 Not 6, POD Loot filter. See detailed instructions inside each folder.
+
+### Starting and optional configuration
+1. Use PlugY.exe to start the game (it's inside Mod PlugY folder). By Default PlugY installer also creates a shortcut on the desktop.
+2. If you want to play in windowed mode, edit the PlugY.ini file.
 Make sure that it doesn't have "-3dfx" in the Params= line. 
 Scroll a bit down to [WINDOWED], and activate it (0 means inactive, 1 - active). 
 ActiveWindowed makes game windowed
 RemoveBorder removes window border (frame)
 You can configure window position offset by X and Y (from top left corner), and also Width and Height (these values are in pixels).
-Don't be afraid to experiment with them. Then save the file and test your changes.
+For Fake Full Screen Full HD experience you can use following values: X=0 Y=0 Width=1920 Height=1080
+Don't be afraid to experiment with these. Then save the file and test your changes. If you afraid to mess up, just back up the PlugY.ini file before.
 
 ### How To Uninstall
 
 1. Delete all files from Diablo 2 folder except MPQs.
-2. Download 1.14d patch ZIP from PlugY website and extract it into Diablo 2 folder.
+2. Download 1.14d patch ZIP from PlugY website (very bottom of the page) and extract it into Diablo 2 folder.
 
 ## Credits
 
