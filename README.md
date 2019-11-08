@@ -61,8 +61,10 @@ Don't be afraid to experiment with these. Then save the file and test your chang
 When working with POD loot filter, PlugY option to relocate save files doesn't work and  causes an error:
 BYTE 56 wanted but E8 found to change memory at 6FF6E16A.
 Make sure to deactivate it:
-```[SAVEPATH]
-ActiveSavePathChange=0```
+
+    [SAVEPATH]
+    ActiveSavePathChange=0
+
 If you want to change save path, do it through Mod PlugY\config\config.cfg file. Note that you have to type double backslashes in the path there like so:
 \Save Path\="C:\\Users\\ubeogesh\\OneDrive\\Games\\D2Saves"
 
